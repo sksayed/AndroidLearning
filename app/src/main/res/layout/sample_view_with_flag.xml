@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:weightSum="4"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bangladesh"
+            android:id="@+id/sampleViewWithFlagImageId"
+            />
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:weightSum="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Hello Sayed"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:textStyle="bold|italic"
+                android:id="@+id/sampleViewWithFlagCountryNameId"
+                />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Hello Sayed"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:textStyle="bold|italic"
+                android:id="@+id/sampleViewWithFlagDescriptionId"
+                />
+
+
+
+        </LinearLayout>
+
+
+     </LinearLayout>
+
+
+
+</LinearLayout>
