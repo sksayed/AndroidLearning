@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Sayed Android Learning</string>
+    <string name="initial">Sheikh Sayed Bin Rahman</string>
+    <string name="bangladesh_button"> Bangladesh </string>
+    <string name="pakistan_button">Pakistan</string>
+    <string name="india_button"> India </string>
+    <string name="banglades_details"> this is Bangladesh , our home </string>
+    <string name="india_details"> this is India</string>
+    <string name="pakistan_details"> This is pakistan </string>
+    <string name="question_button_title">Confirmation</string>
+    <string name="question_button_text">
+        Are you sure ?? \n
+        you want to quit ...
+    </string>
+
+    <string name="first_activity">First Activity</string>
+    <string name="Second_activity">This is my Second actiovity</string>
+    <string name="name">name</string>
+    <string name="password_0_9">password(0-9)</string>
+    <string name="e_mail">Email..</string>
+    <string name="date">Date</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="submit">Submit</string>
+
+</resources>
