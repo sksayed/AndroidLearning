@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:background="#37A4B3"
+    tools:context=".CountryProfileActivity">
+
+    <ImageView
+        android:id="@+id/CountryProfileImageViewerID"
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pakistan" />
+
+
+    <TextView
+        android:id="@+id/CountryProfileTextViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/pakistan_details"
+        />
+
+
+</LinearLayout>

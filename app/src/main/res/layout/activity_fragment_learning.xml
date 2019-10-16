@@ -14,10 +14,13 @@
         android:layout_width="0dp">
 
         <ListView
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/ListViewId"
             android:listSelector="#A310BD"
+            android:divider="@color/colorPrimary"
+            android:dividerHeight="2dp"
             >
 
         </ListView>
@@ -31,12 +34,17 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <fragment
+            android:name="lab.itsoul.com.dailygoods.app.sayedandroidlearning.BlankFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/fragmentId" />
+            android:id="@+id/fragmentId" >
 
-
+        </fragment>
+        </ScrollView>
 
     </LinearLayout>
 

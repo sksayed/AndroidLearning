@@ -10,11 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ListViewLearning2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity android:name=".ListViewLearning">
@@ -22,7 +18,15 @@
         </activity>
         <activity
             android:name=".FragmentLearning"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity android:name=".SecondActivity" />
         <activity android:name=".CountryProfileActivity" />
         <activity android:name=".MainActivity" />
