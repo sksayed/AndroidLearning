@@ -28,7 +28,9 @@ public class NavigationDashboard extends AppCompatActivity implements Navigation
         setSupportActionBar(myToolbar);
         toggle = new ActionBarDrawerToggle(this , myDrawer , myToolbar , R.string.navigation_drawer_open ,
             R.string.navigation_drawer_close);
-        myNavigation.setNavigationItemSelectedListener(this);
+        myDrawer.addDrawerListener(toggle);
+        toggle.syncState();
+        //myNavigation.setNavigationItemSelectedListener(this);
     }
 
 
@@ -39,6 +41,6 @@ public class NavigationDashboard extends AppCompatActivity implements Navigation
 
 
 
-        return false;
+        return true;
     }
 }
