@@ -23,12 +23,14 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+
+        //toolbar ke khuje pawa gese
         Toolbar toolbar = findViewById(R.id.toolbar_sayed_dashboard);
         setSupportActionBar(toolbar);
 
-
+        //drawer ke khuje pawa hoise
         this.myDrawer = findViewById(R.id.drawer_layout_sayed_main_dashboard);
-
+        //ekta toggle add kora hoise which is hamberger icon
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, myDrawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         myDrawer.addDrawerListener(toggle);
         toggle.syncState();
