@@ -15,12 +15,24 @@
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
             android:id="@+id/navbar_toolBarID" />
 
-
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_view_area_for_fragment"
+            />
 
 
     </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navbar_navigationViewID"
+        app:menu="@menu/dashboard_menus"
+        app:headerLayout="@layout/nav_header_layout"
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
