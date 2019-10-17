@@ -6,4 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".NavigationDashboard">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/navbar_toolBarID" />
+
+
+
+
+    </LinearLayout>
+
+
 </androidx.drawerlayout.widget.DrawerLayout>
