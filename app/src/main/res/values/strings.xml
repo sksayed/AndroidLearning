@@ -21,5 +21,7 @@
     <string name="date">Date</string>
     <string name="contact_number">Contact Number</string>
     <string name="submit">Submit</string>
+    <string name="sayed_name">Sheikh Sayed bin Rahman</string>
+    <string name="sayed_description">this is for learning</string>
 
 </resources>
