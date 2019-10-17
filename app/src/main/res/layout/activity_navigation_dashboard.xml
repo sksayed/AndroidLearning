@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavigationDashboard">
+    android:fitsSystemWindows="true"
+    android:id="@+id/navbar_drawlayout_id"
+    tools:context=".NavigationDashboard"
+    tools:openDrawer="start"
+    >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -31,8 +35,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/navbar_navigationViewID"
+        android:layout_gravity="start"
         app:menu="@menu/dashboard_menus"
         app:headerLayout="@layout/nav_header_layout"
+        android:fitsSystemWindows="true"
+       />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
