@@ -36,8 +36,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/navbar_navigationViewID"
         android:layout_gravity="start"
-        app:menu="@menu/dashboard_menus"
         app:headerLayout="@layout/nav_header_layout"
+        app:menu="@menu/dashboard_menus"
         android:fitsSystemWindows="true"
        />
 
