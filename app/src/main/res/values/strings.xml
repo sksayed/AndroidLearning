@@ -23,5 +23,7 @@
     <string name="submit">Submit</string>
     <string name="sayed_name">Sheikh Sayed bin Rahman</string>
     <string name="sayed_description">this is for learning</string>
+    <string name="navigation_drawer_open">Navigation Drawer is Open</string>
+    <string name="navigation_drawer_close">Navigation Drawer is Close</string>
 
 </resources>
