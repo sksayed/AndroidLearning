@@ -7,7 +7,9 @@
         <item
             android:id="@+id/menu_send"
             android:icon="@drawable/ic_send"
-            android:title="Send" />
+            android:title="Send"
+            />
+
         <item
             android:id="@+id/menu_profile"
             android:icon="@drawable/ic_profile"
