@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -89,6 +91,10 @@ public class NavigationDashboard extends AppCompatActivity implements Navigation
     public void editYourProfile(View view) {
 
         Log.d("edit profile" , " the button was clicked ");
+
+        ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(this);
+        Intent goToEditProfile = new Intent( this , EditProfile.class);
+        startActivity(goToEditProfile , options.toBundle());
 
     }
 

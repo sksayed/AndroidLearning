@@ -20,7 +20,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:background="@drawable/btn_background"
-            android:src="@drawable/bangladesh" />
+            android:src="@drawable/bangladesh"
+            android:onClick="goToChoosePicture"
+            />
 
     </LinearLayout>
 
@@ -60,7 +62,7 @@
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"
-        android:onClick="pressedOnSave"
+        android:onClick="pressedOnSaveForProfile"
         android:text="Save"
         android:textColor="#ff22"
         android:textSize="20sp" />

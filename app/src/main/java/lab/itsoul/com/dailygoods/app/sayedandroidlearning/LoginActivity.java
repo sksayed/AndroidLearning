@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
             editor.putString("password", pass);
             this.username.setText("");
             this.password.setText("");
-            editor.commit();
+            editor.apply();
             startActivity(this.navigationWindowIntent);
             Toast.makeText(getApplicationContext(), "saved ", Toast.LENGTH_SHORT).show();
         }
