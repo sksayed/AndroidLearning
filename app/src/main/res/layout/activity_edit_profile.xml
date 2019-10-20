@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".EditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/edit_pic_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/btn_background"
+            android:src="@drawable/bangladesh" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:hint="First Name"
+
+            android:textSize="15sp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Last Name"
+            android:textSize="15sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveButtonIdforEditProfile"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:onClick="pressedOnSave"
+        android:text="Save"
+        android:textColor="#ff22"
+        android:textSize="20sp" />
+</LinearLayout>
+

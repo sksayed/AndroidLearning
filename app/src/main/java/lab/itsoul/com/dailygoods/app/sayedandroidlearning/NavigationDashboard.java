@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 
 import com.google.android.material.navigation.NavigationView;
@@ -26,6 +27,11 @@ public class NavigationDashboard extends AppCompatActivity implements Navigation
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_dashboard);
         this.myDrawer = findViewById(R.id.navbar_drawlayout_id);

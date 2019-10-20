@@ -9,9 +9,10 @@
     >
       <ImageView
           android:id="@+id/nav_header_imageView"
-          android:layout_width="90dp"
-          android:layout_height="90dp"
+          android:layout_width="70dp"
+          android:layout_height="70dp"
           android:src="@drawable/bangladesh"
+          android:background="@drawable/btn_background"
           android:layout_marginBottom="5dp">
 
       </ImageView>
