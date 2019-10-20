@@ -7,10 +7,12 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -20,6 +22,7 @@ public class NavigationDashboard extends AppCompatActivity implements Navigation
     private Toolbar myToolbar;
     private NavigationView myNavigation;
     private ActionBarDrawerToggle toggle;
+    private ImageView profilePic ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,7 @@ public class NavigationDashboard extends AppCompatActivity implements Navigation
         this.myDrawer = findViewById(R.id.navbar_drawlayout_id);
         this.myToolbar = findViewById(R.id.navbar_toolBarID);
         this.myNavigation = findViewById(R.id.navbar_navigationViewID);
+        this.profilePic = findViewById(R.id.nav_header_imageView);
 
         toggle = new ActionBarDrawerToggle(this, myDrawer, myToolbar, R.string.navigation_drawer_open
                 , R.string.navigation_drawer_close);
@@ -80,5 +84,31 @@ public class NavigationDashboard extends AppCompatActivity implements Navigation
 
         Log.d("edit profile" , " the button was clicked ");
 
+    }
+
+    boolean isImagePresent ()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences("Login", MODE_PRIVATE);
+        if (sharedPreferences.contains("image"))
+        {
+            return true ;
+        }
+        else
+        {
+            return false ;
+        }
+
+    }
+
+    void attachProfilePic ()
+    {
+        if (this.isImagePresent())
+        {
+            //shared preference theke image load kora hbe
+        }
+        else
+        {
+            this.profilePic.setImageResource(R.drawable.bangladesh);
+        }
     }
 }

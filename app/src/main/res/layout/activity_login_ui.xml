@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/usernameEditTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:hint="Enter Username"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/passwordEditTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:hint="Enter Password"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:inputType="textPersonName"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/saveButtonId"
+            android:text="Save"
+            android:textSize="20sp"
+            android:textColor="#ff22"
+            android:onClick="pressedOnSave"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/loadButtonId"
+            android:text="Load"
+            android:textSize="20sp"
+            android:textColor="#ff22"
+            android:onClick="pressedOnLoad"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadViewTextId"
+        android:textStyle="italic|bold"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        />
+
+</LinearLayout>
+
