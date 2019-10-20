@@ -59,11 +59,20 @@
         android:id="@+id/go_to_back_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:text="Exit [ To goback to the main activity page]"
         android:onClick="clickonGobackButton"
-        />
+        android:text="Exit [ To goback to the main activity page]"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/go_to_editPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickOnEditPic"
+        android:text="click to pick image"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
 
 
 </LinearLayout>
