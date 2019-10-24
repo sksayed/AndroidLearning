@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/item_padding_Top_bottom"
+    android:paddingTop="@dimen/item_padding_Top_bottom"
+    android:paddingLeft ="@dimen/item_padding_left_right"
+    android:paddingRight="@dimen/item_padding_left_right"
+    android:orientation="vertical"
+    android:background="@drawable/item_rounded_corner_background"
+    >
+
+
+    <ImageView
+        android:id="@+id/itemImageViewId"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:src="@drawable/food"
+        android:layout_marginLeft="@dimen/item_padding_Top_bottom"
+
+
+        />
+    <TextView
+        android:id="@+id/itemTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_toRightOf="@+id/itemImageViewId"
+        android:layout_marginLeft="@dimen/item_padding_Top_bottom"
+        android:text="Hello"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_marginRight="10dp"
+
+        />
+
+
+
+</RelativeLayout>

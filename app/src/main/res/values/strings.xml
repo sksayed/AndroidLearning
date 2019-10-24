@@ -22,4 +22,13 @@
     <string name="contact_number">Contact Number</string>
     <string name="submit">Submit</string>
 
+    <string name="item_cloth">Cloth</string>
+    <string name="item_document">Document</string>
+    <string name="item_food">Food</string>
+    <string name="item_medicine">Medicine</string>
+    <string name="item_liquid">Liquid</string>
+
+
+
+
 </resources>
