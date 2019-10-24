@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +36,7 @@ public class relativeLayout extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext() , LinearLayoutManager.HORIZONTAL, false);
         this.recyclerView.setLayoutManager(layoutManager);
         this.recyclerView.setItemAnimator( new DefaultItemAnimator());
-        this.recyclerView.addItemDecoration(new ItemOffsetDecoration(20));
+        this.recyclerView.addItemDecoration(new ItemOffsetDecoration(30));
         this.recyclerView.setAdapter(itemAdapter);
 
     }
@@ -48,5 +50,12 @@ public class relativeLayout extends AppCompatActivity {
           this.itemList.add(item);
       }
       this.itemAdapter.notifyDataSetChanged();
+    }
+
+
+    public void GoToWhereTo(View view) {
+        Intent i = new Intent(this , WhereTo.class);
+        startActivity(i);
+
     }
 }

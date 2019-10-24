@@ -17,9 +17,8 @@
         android:layout_height="20dp"
         android:src="@drawable/food"
         android:layout_marginLeft="@dimen/item_padding_Top_bottom"
-
-
         />
+
     <TextView
         android:id="@+id/itemTextViewId"
         android:layout_width="wrap_content"
@@ -32,7 +31,8 @@
         android:textStyle="normal"
         android:textColor="@color/black"
         android:layout_marginRight="10dp"
-
         />
+
+
 
 </RelativeLayout>

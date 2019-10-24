@@ -6,21 +6,52 @@
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/whereto_layout_padding_left_right"
     android:paddingRight="@dimen/whereto_layout_padding_left_right"
+    android:paddingBottom="56dp"
     tools:context=".WhereTo">
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/whereToRecyclerViewId"
-        />
-    <android.support.design.widget.FloatingActionButton
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        
+        android:layout_above="@+id/editText_searchLocation"
+        android:text="@string/Where_To"
+        android:layout_marginBottom="20dp"
         />
 
+   <EditText
+       android:id="@+id/editText_searchLocation"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:layout_above="@id/whereToRecyclerViewId"
+       android:hint="@string/search_location"
+       android:layout_marginBottom="25dp"
+       android:background="@drawable/background_search_shape"
+
+   />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="start|bottom"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+
+
+         />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/whereToRecyclerViewId"
+            android:layout_toRightOf="@+id/fab"
+            android:layout_marginLeft="7dp"
+            android:layout_alignBottom="@id/fab"
+            />
 
 
 

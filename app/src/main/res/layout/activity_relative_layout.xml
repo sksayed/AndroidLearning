@@ -5,12 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--  //here scrollbar can be added but we will ot add this-->
+   <!-- android:scrollbars="horizontal"-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
-        android:scrollbars="horizontal" />
+
+        />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Go Back"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:layout_below="@+id/recycler_view"
+        android:layout_centerHorizontal="true"
+        android:onClick="GoToWhereTo"
+        />
 
 </RelativeLayout>
 

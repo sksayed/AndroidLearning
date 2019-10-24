@@ -27,6 +27,8 @@
     <string name="item_food">Food</string>
     <string name="item_medicine">Medicine</string>
     <string name="item_liquid">Liquid</string>
+    <string name="search_location">Search Location</string>
+    <string name="Where_To">Where to</string>
 
 
 </resources>
