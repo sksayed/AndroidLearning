@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/pageLayout_left_padding"
+    android:paddingRight="@dimen/pageLayout_right_padding"
+    android:paddingBottom="@dimen/pageLayout_bottom_margin"
+    tools:context=".RecipientDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchLayout"
+        android:layout_marginBottom="20dp"
+        android:text="Pickup Point"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@id/searchLayout_suggestion"
+        android:background="@drawable/background_search_shape">
+
+        <EditText
+            android:id="@+id/editText_searchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="Search Location"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_search_24px" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchLayout_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/RecipentDetails"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/background_search_shape">
+
+        <EditText
+            android:id="@+id/editText_searchLocation_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:text="here" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RecipentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BottomLayout"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/RecipientDetails"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/RecipentNameNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="12dp"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/RecipientNameEditText"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="2"
+                android:background="@drawable/background_search_shape"
+                android:hint="Name"
+                android:inputType="textPersonName"
+
+
+                />
+
+            <EditText
+                android:id="@+id/RecipientNumber"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_search_shape"
+                android:hint="Number"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/RecipentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/RecipentNameNumber"
+            android:layout_marginTop="8dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_search_shape"
+                android:hint="Address"
+                android:inputType="textPostalAddress" />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/BottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@android:color/black"
+            android:src="@drawable/ic_arrow_back_24px" />
+
+        <TextView
+            android:id="@+id/bottomLayoutTextViewId"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/fab"
+            android:background="@drawable/background_button_continue"
+            android:gravity="center_vertical"
+            android:text="@string/Continue"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

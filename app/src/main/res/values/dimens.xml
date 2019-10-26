@@ -4,4 +4,7 @@
     <dimen name="item_padding_Top_bottom">10dp</dimen>
     <dimen name="whereto_layout_padding_left_right">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="pageLayout_left_padding">16dp</dimen>
+    <dimen name="pageLayout_right_padding">16dp</dimen>
+    <dimen name="pageLayout_bottom_margin">56dp</dimen>
 </resources>
