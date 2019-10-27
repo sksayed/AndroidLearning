@@ -7,4 +7,7 @@
     <dimen name="pageLayout_left_padding">16dp</dimen>
     <dimen name="pageLayout_right_padding">16dp</dimen>
     <dimen name="pageLayout_bottom_margin">56dp</dimen>
+    <dimen name="Quicksand_regular">14sp</dimen>
+    <dimen name="Quicksand_large">24sp</dimen>
+
 </resources>

@@ -35,6 +35,12 @@
     <string name="Continue">Continue</string>
     <string name="RecipientDetails">Recipient Details</string>
     <string name="RequestDeliman">Request Deliman</string>
+    <string name="confirm_delivery_location">Confirm Delivery /n Location</string>
+    <string name="confirm_delivery">Confirm Delivery</string>
+    <string name="location">Location</string>
+    <string name="Picup_point">Pickup Point</string>
+    <string name="Owner_Details">Owner Details</string>
+    <string name="Next">Next</string>
 
 
 </resources>
