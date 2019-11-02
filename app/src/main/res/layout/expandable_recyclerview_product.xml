@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:paddingStart="45dp"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:text="Product"
+        android:textColor="#921E45"
+        android:id="@+id/product"
+        />
+
+</FrameLayout>

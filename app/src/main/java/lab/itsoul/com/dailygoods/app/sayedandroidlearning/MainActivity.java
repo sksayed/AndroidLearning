@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         this.bangladeshBtn = findViewById(R.id.banglades_button);
         this.indiaButton = findViewById(R.id.india_button);
         this.pakButton = findViewById(R.id.pakistan_button);
-        this.profileActivityIntent = new Intent(MainActivity.this , CountryProfileActivity.class);
-        this.SecondActivityIntent = new Intent(MainActivity.this ,  SecondActivity.class);
         this.ansTV = findViewById(R.id.mainActivityTextView);
     }
 
