@@ -43,6 +43,7 @@ public class ExpandibleRecyclerView extends AppCompatActivity {
         companies.add(microsoft);
 
         ProductAdapter productAdapter = new ProductAdapter(companies);
-        recyclerView.setAdapter(productAdapter);
+        recyclerView.setAdapter(productAdapter)
+        ;
     }
 }
